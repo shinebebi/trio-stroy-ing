@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    padding: 10px 20px;
+    height: 100px;
+    background-color: #FFFFFF;
+}
+
+
+.logo {
+    width: 170px; /* можешь настроить ширину логотипа по своему выбору */
+    height: 50px; /* можешь оставить такой высоты или изменить */
+}
+
+.ul {
+    display: flex;
+    list-style-type: none;
+}
+.ul {
+    margin-right: 20px;
+    gap: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    opacity: 0.6;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact img {
+    width: 40px; /* можешь изменить размер иконки телефона */
+    height: 40px; /* можешь изменить размер иконки телефона */
+    margin-right: 10px;
+}
+.contact img:hover {
+    opacity: 0.6;
+}
+.contact button {
+    background-color: #3B41DF; /* цвет фона кнопки */
+    color: #FFFFFF; /* цвет текста кнопки */
+    padding: 5px 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 22.4px;
+    cursor: pointer;
+    width: 176px;
+    height: 56px;
+    font-family: 'Roboto Mono', monospace;
+}
+.contact button:hover{
+    opacity: 0.7;
+}

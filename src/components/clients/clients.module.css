@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0 20px 0;
+    text-align: start;
+}
+
+.logoContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 100px;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 300px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    text-align: center;
+}
+.header {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    margin-left: 100px;
+}

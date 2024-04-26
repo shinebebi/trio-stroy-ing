@@ -1,0 +1,59 @@
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    height: 663px;
+    overflow: hidden;
+}
+
+.sliderSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+.sliderSlide.active {
+    opacity: 1;
+}
+
+.overlayText {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 64px;
+    text-align: start;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.button {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: none;
+}
+.button img {
+    width: 100%;
+    height: 100%;
+    transform: scale(2.2);
+}
+.prev {
+    right: 200px;
+}
+.next {
+    right: 100px;
+}

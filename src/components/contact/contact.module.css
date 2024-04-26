@@ -1,0 +1,143 @@
+.contactContainer {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: "Merriweather", serif;
+    color: black;
+    text-align: start;
+    padding-top: 70px;
+}
+
+.contactHeader {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 100px;
+}
+
+.contactInfoTable {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 65%;
+    background-color: #fbfbfb;
+    justify-content: center;
+    border: 1px solid #B3B3B3;
+    padding-left: 20px;
+    margin-left: 100px;
+
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #B3B3B3;
+    padding-right: 20px;
+
+}
+.name {
+    color: #B3B3B3;
+}
+.address{
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #B3B3B3;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.telEmail {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+
+.contactDetails {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.sendMessageBtn, .button {
+    background-color: #fff;
+    color: #3B41DF;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 22.4px;
+
+    border: 2px solid #3B41DF;
+    font-weight: bold;
+    width: 176px;
+    height: 56px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.map {
+    display: flex;
+    padding: 20px;
+
+}
+
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupInner {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.h2 {
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input,
+.textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.6;
+}
+.closeBtn{
+    border: none;
+    margin-left: 80%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
