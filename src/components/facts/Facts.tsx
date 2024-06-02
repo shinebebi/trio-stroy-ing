@@ -27,14 +27,6 @@ const Facts: React.FC<Props> = ({ title, facts }) => {
     return (
             <div className={style.factsContainer} id="about">
                 <h2 className={style.title}>{title}</h2>
-                    <div className={`${style.fadeIn} ${isVisible && style.show} ${style.factsBox}`} onScroll={handleScroll}>
-                        {facts.map((fact, index) => (
-                            <div key={index} className={style.fact}>
-                                <div className={style.number}>{fact.number}</div>
-                                <div className={style.text}>{fact.text}</div>
-                            </div>
-                        ))}
-                    </div>
                 <p className={`${style.fadeIn2} ${isVisible2 && style.show} ${style.info}`} onScroll={handleScroll2}>
                     "Трио Строй Инжиниринг" - надежный партнер в сфере строительства и инжиниринга. Наш опыт, ответственность и компетентность являются основой для успешного завершения каждого проекта. Мы специализируемся на <b>комплексных работах по управлению строительством</b> и предлагаем широкий спектр строительно-монтажных услуг в промышленном и гражданском строительстве.<br></br>
                     <br></br>

@@ -5,14 +5,31 @@ import civil_img from './civil.jpg'
 import exploat_img from './exploat.jpg'
 import next from './next.png'
 import prev from './prev.png'
+import door_img from './door.jpeg'
+import furniture_img from './furniture.jpeg'
+import {  Link } from "react-router-dom";
+import window_img from './window.png'
 
-const images = [
-    { src: prom_img, text: 'Промышленное строительство' },
-    { src: civil_img, text: 'Городское строительство' },
-    { src: exploat_img, text: 'Ввод в эксплуатацию инженерных объектов' }
+export type ImageType = {
+    src: string;
+    text: string;
+    link: string;
+};
+
+export const imagesIng: ImageType[] = [
+    { src: prom_img, text: 'Промышленное строительство', link:'/engineering/prom' },
+    { src: civil_img, text: 'Городское строительство', link: '/engineering/civil' },
+    { src: exploat_img, text: 'Ввод в эксплуатацию инженерных объектов', link:'/engineering/exploat' }
 ];
 
-const Slider = () => {
+export const imagesRestore: ImageType[] = [
+    { src: door_img, text: 'Реставрация дверей', link:'/restore/doorrestore' },
+    { src: furniture_img, text: 'Реставрация мебели', link:'/restore/furniturerestore' },
+    { src: window_img, text: 'Реставрация окон', link:'/restore/windowrestore' }
+]
+
+
+const Slider: React.FC<any> = ({ images }) => {
     const [currentImgIndex, setCurrentImgIndex] = useState(0);
 
     const handlePrevClick = () => {
@@ -25,20 +42,20 @@ const Slider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImgIndex((currentImgIndex + 1) % images.length);
-        }, 3000); // Переключение каждые 2 секунды
+        }, 3000);
         return () => clearInterval(interval);
     }, [currentImgIndex]);
 
     return (
         <div className={style.sliderContainer} id="services">
-            {images.map((image, index) => (
-                <div
+            {images.map((image: ImageType, index:number) => (
+                <Link to={images[currentImgIndex].link}
                     key={index}
                     className={`${style.sliderSlide} ${index === currentImgIndex ? style.active : ''}`}
-                    style={{ backgroundImage: `url(${image.src})`}}
+                    style={{ backgroundImage: `url(${image.src})`}} onClick={() => console.log(image.src)}
                 >
                     <div className={style.overlayText}>{image.text}</div>
-                </div>
+                </Link>
             ))}
             <button onClick={handlePrevClick} className={`${style.button} ${style.prev}`}>
                 <img src={prev}/>

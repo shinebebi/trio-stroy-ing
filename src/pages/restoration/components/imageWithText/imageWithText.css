@@ -1,0 +1,34 @@
+.image-with-text {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.text-box {
+    width: 70%;
+    line-height: 25px;
+}
+.text.visible {
+    opacity: 1;
+}

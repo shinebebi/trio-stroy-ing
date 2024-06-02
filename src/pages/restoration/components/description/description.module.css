@@ -1,0 +1,44 @@
+.restoration {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.restorationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.restorationText {
+    width: 50%;
+    color: #333;
+}
+
+.restorationText h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.restorationText p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.restorationImage {
+    width: 45%;
+    text-align: center;
+}
+
+.restorationImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}

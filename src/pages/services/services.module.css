@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    height: 80vh;
+    font-family: "Merriweather", serif;
+    align-items: center;
+}
+.h1 {
+    font-size: 5vw;
+    width: 80%;
+    margin-bottom: 0px;
+}
+.p {
+    font-size: 1.5vh;
+    width: 80%;
+}
+.cardBox {
+    display: grid;
+    grid-column: span;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: auto;
+    width: 65%;
+    row-gap: 30px;
+}
