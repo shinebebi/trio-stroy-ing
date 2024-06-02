@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trio-stroy-ing/static/css/main.88179d78.css",
-    "main.js": "/trio-stroy-ing/static/js/main.c1be1f4e.js",
+    "main.js": "/trio-stroy-ing/static/js/main.b5fed4e4.js",
     "static/js/453.520e1735.chunk.js": "/trio-stroy-ing/static/js/453.520e1735.chunk.js",
     "static/media/prom.jpg": "/trio-stroy-ing/static/media/prom.1f0461b7189df105af41.jpg",
     "static/media/exploat.jpg": "/trio-stroy-ing/static/media/exploat.71096436cf77dbdaed48.jpg",
@@ -44,11 +44,11 @@
     "index.html": "/trio-stroy-ing/index.html",
     "static/media/menu.svg": "/trio-stroy-ing/static/media/menu.5937ce63856e9e9d7f9bfe88e8f4689d.svg",
     "main.88179d78.css.map": "/trio-stroy-ing/static/css/main.88179d78.css.map",
-    "main.c1be1f4e.js.map": "/trio-stroy-ing/static/js/main.c1be1f4e.js.map",
+    "main.b5fed4e4.js.map": "/trio-stroy-ing/static/js/main.b5fed4e4.js.map",
     "453.520e1735.chunk.js.map": "/trio-stroy-ing/static/js/453.520e1735.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88179d78.css",
-    "static/js/main.c1be1f4e.js"
+    "static/js/main.b5fed4e4.js"
   ]
 }
