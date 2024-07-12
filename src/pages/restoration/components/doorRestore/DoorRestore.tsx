@@ -8,6 +8,8 @@ import door2 from './doorImg/door2.jpeg'
 import door3 from './doorImg/door3.jpeg'
 import door4 from './doorImg/door4.jpeg'
 import door5 from './doorImg/door5.jpeg'
+import door6 from './doorImg/before-after_1.jpg'
+import door7 from './doorImg/before-after_2.jpg'
 // @ts-ignore
 
 const itemsWhy = [
@@ -75,9 +77,10 @@ const DoorRestore = () => {
             <div className={style.container}>
                 <div className={style.textBox}>
                     <div className={style.title}>
-                        <h1 className={style.h1}>РЕСТАВРАЦИЯ</h1>
-                        <h1 className={style.h1}>ДВЕРЕЙ ИЗ</h1>
-                        <h1 className={style.h1}>МАССИВА</h1>
+                        <h1 className={style.h1}>РЕСТАВРАЦИЯ<br></br>
+                            ДВЕРЕЙ ИЗ<br></br>
+                            МАССИВА
+                        </h1>
                     </div>
                     <div className={style.text}>
                         <p>Ремонт двери — это особый процесс, который должен выполняться
@@ -127,7 +130,7 @@ const DoorRestore = () => {
                         ))}
                     </ul>
                 </div>
-                <div className={style.imageContainer}>
+                <div className={style.imageContainer4}>
                     <img src={door3} className={style.img}/>
                 </div>
             </div>
@@ -171,6 +174,24 @@ const DoorRestore = () => {
                 </div>
                 <div className={style.imageContainer}>
                     <img src={door1} className={style.img}/>
+                </div>
+            </div>
+            <div className={style.container}>
+                <div className={style.textBox3}>
+                    <div className={style.title3}>
+                        <h2 className={style.h2}>ПРИМЕР ДВЕРЕЙ ИЗ МАССИВА ДО И ПОСЛЕ ВООСТАНОВЛЕНИЯ</h2>
+                    </div>
+                    <p className={style.p2}>
+                        Стоимость реставрации дверей из массива расчитывается индивидуально
+                    </p>
+                    <div className={style.exampleBox}>
+                        <div className={style.imageContainer5}>
+                            <img src={door6} className={style.img}/>
+                        </div>
+                        <div className={style.imageContainer5}>
+                            <img src={door7} className={style.img}/>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={style.container2}>

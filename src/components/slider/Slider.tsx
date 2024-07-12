@@ -24,7 +24,6 @@ export const imagesIng: ImageType[] = [
 
 export const imagesRestore: ImageType[] = [
     { src: door_img, text: 'Реставрация дверей', link:'/restore/doorrestore' },
-    { src: furniture_img, text: 'Реставрация мебели', link:'/restore/furniturerestore' },
     { src: window_img, text: 'Реставрация окон', link:'/restore/windowrestore' }
 ]
 

@@ -19,6 +19,16 @@ function Header () {
         setMenuOpen(!menuOpen);
     };
     const [showDropdown, setShowDropdown] = useState(false);
+    const [showDropdownDoor, setShowDropdownDoor] = useState(false);
+    const [showDropdownWindow, setShowDropdownWindow] = useState(false);
+
+    const handleMouseDoor = () => {
+        showDropdownDoor ? setShowDropdownDoor(false) : setShowDropdownDoor(true);
+    };
+    const handleMouseWindow = () => {
+        showDropdownWindow ? setShowDropdownWindow(false) : setShowDropdownWindow(true);
+    };
+
 
     const handleMouseEnter = () => {
         setShowDropdown(true);
@@ -66,10 +76,29 @@ function Header () {
                         {showDropdown && (
                             <div className={style.dropdown}>
                                 <Link className={style.link} to="/restore">реставрация</Link>
-                                <Link className={style.link} to="/engineering">инжинерные работы</Link>
+                                <Link className={style.link} to="/ing-systems">инжинерные системы</Link>
                             </div>
                         )}
                     </li>
+                    <li className={style.menuItem} onMouseEnter={handleMouseDoor} onMouseLeave={handleMouseDoor}>
+                    <div className="menu-text">двери</div>
+                    {showDropdownDoor && (
+                        <div className={style.dropdown}>
+                            <Link className={style.link} to="/restore/doorrestore">реставрация дверей</Link>
+                            <Link className={style.link} to="/doormanufactoring">изготовление дверей</Link>
+                        </div>
+                    )}
+                    </li>
+                    <li className={style.menuItem} onMouseEnter={handleMouseWindow} onMouseLeave={handleMouseWindow}>
+                        <div className="menu-text">окна</div>
+                        {showDropdownWindow && (
+                            <div className={style.dropdown}>
+                                <Link className={style.link} to="/restore/windowrestore">реставрация окон</Link>
+                                <Link className={style.link} to="/windowmanufactoring">изготовление окон</Link>
+                            </div>
+                        )}
+                    </li>
+                    <li><Link to="/production" className={style.link}>производство</Link></li>
                 </ul>
             </nav>
             <div className={style.contact}>

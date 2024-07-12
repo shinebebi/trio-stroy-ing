@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
+    font-size: 1vw;
     padding: 10px 20px;
     height: 100px;
     background-color: #FFFFFF;
@@ -149,5 +149,6 @@
     .menuList{
         display: flex;
         flex-direction: column;
+
     }
 }

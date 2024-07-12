@@ -1,0 +1,199 @@
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    font-family: "Cormorant Garamond", serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    background-color: #f0f0f0;
+    margin-bottom: 35px;
+}
+.textBox4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.title {
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
+.h1 {
+    font-size: 5vh;
+}
+.infoContainer {  display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-rows: 0.7fr 0.2fr 0.3fr 0.2fr 0.1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row dense;
+    margin-top: 100px;
+    width: 100%;
+    grid-template-areas:
+    "p1 prod1 prod1"
+    "prod2 prod1 prod1"
+    "prod2 prod3 prod3"
+    "prod4 prod5 p2"
+    ". . p2"
+    "p3 prod6 prod6";
+}
+
+.p1 {
+    grid-area: p1;
+    background-color: #f2f2f2;
+    font-size: 2vh;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.prod1 {
+    grid-area: prod1;
+    height: 60vh;
+}
+
+.prod2 {
+    grid-area: prod2;
+    height: 40vh;
+    width: 80%;
+    justify-self: end;
+
+}
+
+.prod3 {
+    grid-area: prod3;
+    height: 30vh;
+    width: 60%;
+    justify-self: center;
+}
+
+.prod4 {
+    grid-area: prod4;
+    height: 30vh;
+    width: 70%;
+    justify-self: end;
+}
+
+.prod5 {
+    grid-area: prod5;
+    height: 30vh;
+    width: 80%;
+}
+
+.p2 {
+    grid-area: p2;
+    font-size: 2vh;
+    padding: 20px;
+    margin-left: -30%;
+    align-content: center;
+    justify-self: center;
+}
+
+.p3 {
+    grid-area: p3;
+    background-color: #f2f2f2;
+    font-size: 2vh;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.prod6 { grid-area: prod6; }
+.materialContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 100px;
+
+}
+.h2 {
+    font-size: 3vh;
+    font-weight: bold;
+    margin-left: 10vw;
+}
+.materialText {
+    font-size: 2vh;
+    width: 40%;
+    margin-left: 10vw;
+}
+.materialBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 25px;
+    margin-left: 10vw;
+}
+.materialItem {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44, 40, 40);
+    gap:10px;
+    color: #f2f2f2;
+    font-size: 1.5vh;
+    width: 25%;
+}
+.materialTitle {
+    font-size: 1.7vh;
+    border-bottom:2px solid #B59059;
+    padding: 10px;
+}
+.materialImg {
+    width: 100%;
+    height: 20vh;
+}
+.brandContainer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "brand1 brand2 brand3"
+    "brand1 brand2 brand4";
+    width: 85%;
+    margin-left: 10vw;
+    padding-bottom: 50px;
+}
+
+.brand1 { grid-area: brand1;
+    width: 30vw;
+    height: 40vh;
+}
+
+.brand2 { grid-area: brand2;
+    width: 30vw;
+    height: 40vh;
+}
+
+.brand3 { grid-area: brand3;
+    width: 20vw;
+    height: 20vh;
+}
+
+.brand4 { grid-area: brand4;
+    width: 20vw;
+    height: 18vh;
+}
+

@@ -7,6 +7,12 @@ import window1 from './windowImg/window1.jpeg'
 import window2 from './windowImg/window2.jpeg'
 import window3 from './windowImg/window3.jpeg'
 import window4 from './windowImg/window4.jpeg'
+import el1 from './windowImg/el_1.png'
+import el2 from './windowImg/el_2.png'
+import el3 from './windowImg/el_3.png'
+import el4 from './windowImg/el_4.png'
+import line1 from './windowImg/line1.svg'
+import line2 from './windowImg/line2.svg'
 // @ts-ignore
 
 const reasonItems = [
@@ -146,6 +152,32 @@ const WindowRestore = () => {
                 </div>
                 <div className={style.imageContainer}>
                     <img src={window4} className={style.img}/>
+                </div>
+            </div>
+            <div className={style.container4}>
+                <div className={style.elemBox}>
+                    <div className={style.imageContainer5}>
+                        <img src={el1} className={style.img}/>
+                    </div>
+                    <div className={style.imageContainer5}>
+                        <img src={el2} className={style.img}/>
+                    </div>
+                    <p className={style.text4}>ДЕКОРАТИВНЫЕ НАКЛАДКИ, РАЗНООБРАЗНАЯ ФУРНИТУРА, ЭКСКЛЮЗИВНЫЕ ЛАТУННЫЕ ИЗДЕЛИЯ, СПОСОБНЫ ПРЕОБРАЗИТЬ ВАШИ ОКНА ВСЕГО ЗА ОДИН ВИЗИТ НАШИХ
+                        СПЕЦИАЛИСТОВ</p>
+                    <div className={style.imageContainer5}>
+                        <img src={el3} className={style.img}/>
+                    </div>
+                    <div className={style.imageContainer5}>
+                        <img src={el4} className={style.img}/>
+                    </div>
+                </div>
+                <div className={style.lineBox}>
+                    <div className={style.imageContainer4}>
+                        <img src={line2} className={style.img}/>
+                    </div>
+                    <div className={style.imageContainer4}>
+                        <img src={line1} className={style.img}/>
+                    </div>
                 </div>
             </div>
         </section>

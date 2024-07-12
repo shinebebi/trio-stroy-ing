@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 50px;
     width: 100%;
-    height: 80vh;
+    margin-bottom: 100px;
     font-family: "Merriweather", serif;
     align-items: center;
 }

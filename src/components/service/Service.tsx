@@ -19,7 +19,6 @@ export const imagesService: ImageType[] = [
     { src: civil_img, text: 'Городское строительство', link: '/engineering/civil' },
     { src: exploat_img, text: 'Ввод в эксплуатацию инженерных объектов', link: '/engineering/exploat' },
     { src: door_img, text: 'Реставрация дверей', link: '/restore/doorrestore'},
-    { src: furniture_img, text: 'Реставрация мебели', link: '/restore/furniturerestore' },
     { src: window_img, text: 'Реставрация окон', link: '/restore/windowrestore' }
 
 ];
